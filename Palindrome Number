@@ -1,0 +1,14 @@
+class Solution(object):
+    def isPalindrome(self, x):
+            num=str(x)
+            if x<0:
+              return False
+            else:
+                result=''
+                for i in range (len(num)):
+                    result+=num[-1-i]
+                rev=int(result)
+                if rev==x:
+                    return True
+                else:
+                    return False
